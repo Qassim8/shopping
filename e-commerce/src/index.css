@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .between {
+    @apply flex justify-between items-center;
+  }
+  .nav-link {
+    @apply text-slate-800 md:text-white no-underline md:px-5 py-3 w-full block duration-200 hover:text-purple-600 hover:font-bold;
+  }
+  .swiper-item {
+    @apply relative bg-cover w-full h-[100vh] after:absolute after:top-0 after:end-0 after:w-full after:h-[100%] after:bg-slate-900/40;
+  }
+  .top-box {
+    @apply relative text-center px-2 py-4 bg-slate-200 shadow after:absolute after:top-0 after:end-0 after:w-full after:h-[1px] after:bg-purple-500 after:duration-300 hover:after:h-full rounded-md after:rounded-md z-10 after:-z-10;
+  }
+  .top-box-items {
+    @apply group-hover:text-white duration-500;
+  }
+  .fav-product {
+    @apply absolute top-5 end-5 h-7 w-7 flex items-center justify-center rounded-[50%] bg-slate-200/30 cursor-pointer;
+  }
+  .heads-up {
+    @apply relative bg-cover ps-5 py-20 w-full after:absolute after:top-0 after:end-0 after:w-full after:h-[100%] after:bg-slate-700/60 rounded-sm after:rounded-sm;
+  }
+  .center-element {
+    @apply flex justify-center items-center;
+  }
+  .menu-link {
+    @apply text-white no-underline ps-1 py-1 block duration-200 hover:bg-purple-600 hover:font-bold;
+  }
+  .social-icon {
+    @apply text-white me-3 h-[35px] w-[35px] flex justify-center items-center border border-white rounded-full hover:border-[transparent] duration-300 no-underline;
+  }
+}
+
+header nav .active {
+  color: 
+  #b26df1;
+  font-weight: bold;
+}
+.contain {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .contain {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contain {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contain {
+    width: 1170px;
+  }
+}
+.container-left {
+  padding-left: 70px;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .contain {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contain {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contain {
+    width: 1170px;
+  }
+}
+.back-first {
+  background-image: url("./ecommerce img/pexels-andrea-piacquadio-837140.jpg");
+}
+.back-second {
+  background-image: url("./ecommerce img/pexels-the-lazy-artist-gallery-3307862.jpg");
+}
+.back-collection {
+  background-image: url("./ecommerce img/pexels-mike-bird-250288.jpg");
+}
+.back-ladies {
+  background-image: url("./ecommerce img/pexels-lumn-322207.jpg");
+}
+.back-fashion {
+  background-image: url("./ecommerce img/pexels-uncoveredlens-eze-joshua-3620411.jpg");
+}
+.back-formal {
+  background-image: url("./ecommerce img/pexels-pixabay-325876.jpg");
+}
+.swiper-pagination-bullet {
+  padding: 4px !important;
+  border: 1px solid rgba(255, 255, 255, 0.753) !important;
+  transition: 0.2s linear !important;
+}
+.swip .swiper-pagination-bullet {
+  position: relative;
+  bottom: -10px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #9333ea !important;
+  padding: 4px 10px !important;
+  border-radius: 10px !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 17px !important;
+  color: #9333ea !important;
+}
